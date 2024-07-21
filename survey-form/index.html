@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey form</h1>
+      <p id="description">Please do fill this form carefully. Thank You!</p>
+    </header>
+    <form id="survey-form">
+      <div class="form">
+        <label id="name-label" >Name <input id="name" type="text" required placeholder="enter name"></label>
+        <label id="email-label">Email <input id="email" type="email" required placeholder="enter valid email"></label>
+        <label id="number-label"> Age <input id="number" type="number" min="15" max="120" placeholder="enter age"></label>
+      </div>
+      <div class="form">
+          <legend>Gender</legend>
+          <input name="gender-label" class="inline" id="male" type="radio" name="gender-label" value="0">Male
+          <input name="gender-label" class="inline" id="gender-label" type="radio" name="female" value="1"> Female
+          <input class="inline" name="gender-label" id="others" value="2" type="radio" name="gender-label" > Others
+      </div>
+      <div class="form">
+          <label>How did you hear about us?
+            <select id="dropdown">
+              <option id="dropdown" value="">Select an option</option>
+              <option id="dropdown" value="collegues">Collegues</option>
+              <option id="dropdown" value="socials">Social media</option>
+              <option id="dropdown" value="ad">Advertisements</option>
+              <option id="dropdown" value="other">Other</option>
+            </select>
+          </label>
+      </div>
+      <div class="form">
+          <legend>Which of the following social medias do you use regularly?</legend>
+          <input type="checkbox" value="youtube">YouTube
+          <input type="checkbox" value="Instagram">Instagram
+          <input type="checkbox" value="facebook">Facebook
+          <input type="checkbox" value="twitter" >Twitter
+          <input type="checkbox" value="others" >Other
+      </div>
+      <div class="form">
+          <label for="add">Additional comments: 
+            <textarea id="add" name="add" rows="4" cols="30" placeholder="you can enter your comments here..."></textarea>
+          </label>
+      </div>
+      <button type="submit" id="submit" >Submit</button>
+
+      </form>
+    
+    </body>
+</html>

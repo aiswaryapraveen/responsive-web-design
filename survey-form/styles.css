@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, serif;
+    background-color: #e5e5ea;
+    text-align: center;
+    padding: 20px;  
+  }
+  header{
+    margin-bottom: 25px;
+  }
+  h1{
+    font-size: 2rem;
+    color:rgb(104, 148, 148);
+    margin-bottom: 2px;
+  }
+  p{
+    font-size: 0.95rem;
+    color:rgb(104, 148, 148,0.5);
+    font-style: italic;
+    margin-top: 0;
+  }
+  form{
+    background-color: rgb(104, 148, 148, 0.45) ;
+    margin: auto;
+    padding: 40px;
+    border-radius: 0.5%;
+    max-width:600px;
+    width: 100%;
+    align-items: center;
+  
+  }
+  .form{
+    text-align: left;
+    margin-bottom: 20px;
+  
+  }
+  legend{
+    font-size: 1.15rem;
+    font-weight: bold;
+  }
+  label{
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1.15rem;
+    font-weight: bold;
+  }
+  input[type="text"],input[type="email"], input[type="number"], select, textarea{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 2%;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  input[type="radio"]{
+    margin: 20px;
+    padding: 20px;
+    display: inline;
+  }
+  input[type="checkbox"]{
+    display: inline-block;
+    margin: 20px;
+    padding: 0;;
+  }
+  button{
+    background-color: rgb(104, 148, 148, 0.45) ;
+    color: black;
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+  }
+  button:hover{
+    background-color: rgb(104, 148, 148, 1);
+  }

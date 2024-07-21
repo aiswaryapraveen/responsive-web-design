@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header> Python language documentation</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#variables_and_data_types">Variables and Data Types</a>
+      <a class="nav-link" href="#control_structures">Control Structures</a>
+      <a class="nav-link" href="#functions">Functions</a>
+      <a class="nav-link" href="#exception_handling">Exception Handling</a>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>Python is a high-level,general purpose programming language.</p>
+        <p>Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+        <p>Python is dynamically typed and garbafe-collected.</p>
+        <p>It supports multiple programming paradigms, including structured(particularly procedurural),object-oriented and functional programming.</p>
+      </section>
+      <section id="variables_and_data_types" class="main-section">
+        <header>Variables and Data types</header>
+        <p>Variables can store data of different types, and different types can do different things.</p>
+        <p>Python has the following data types built-in by deault, in these categories:</p>
+        <ul>
+          <li><b>Strings:</b> str</li>
+          <li><b>Numeric Types:</b>int, float, complex</li>
+          <li><b>Lists:</b>list,</li>
+          <li><b>Dictionaries:</b>dict</li>
+          <li><b>Sets:</b>set</li>
+          <li><b>Tuple:</b>tuple</li>
+        </ul>
+        <p>Here are some examples:</p>
+        <pre><code>
+          integer=10
+          float_number=1.0
+          string="Hello!"
+          my_list=[1,2,3]
+          my_tuple=(1,2,3)
+          my_dict={"name":"Adi","Age":18}
+          my_set={1,2,3}
+        </code></pre>
+        <p>Python has no command for declaring a variable.</p>
+        <p>A variable is created the moment you first assign a value to it</p>
+        <p>Example:</p>
+        <pre><code>
+          x = 5
+          y= "Adi"
+        </code></pre>
+      </section>
+      <section id ="control_structures" class="main-section">
+        <header>Control Structures</header>
+        <p>Control flow refers to the sequence a program will follow during its execution.</p>
+        <p>Conditions, loops, and calling functions significantly increase how a Python program is controlled.</p>
+        <p>There are three types of control structures in Python:</p>
+        <ul>
+          <li><b>Conditional Statements</b> - if, elif, else</li>
+          <li><strong>Loops</strong> - for, while</li>
+          <li><b>Control Statements</b> - break, continue, pass</li>
+        </ul>
+        <p>Here are some examples:</p>
+        <h3>Conditional Statements</h3>
+        <pre><code>
+          if x>0:
+             print("positive")
+          elif x==0:
+             print("zero")
+          else:
+             print("negative")
+        </code></pre>
+
+        <h3>Loops</h3>
+        <pre><code>
+          for i in range(n):
+                print(i)
+          while x < n:
+                print(x)
+        </pre></code>
+
+        <h3>Control Statements</h3>
+        <pre><code>
+          for i in range(5):
+                if i==3:
+                   break
+                print(i)
+
+          for i in range(5):
+                if i==5:
+                  continue
+        
+          for i in range(6):
+                pass <i>#acts as a place holder</i>
+
+        </code></pre>
+
+        </section>
+
+        <section id="functions" class="main-section">
+          <header>Functions</header>
+          <p>A function is a block of code which only runs when it is called.</p>
+          <p>You can pass data, known as parameters, into a function.</p>
+          <p>A function can return a data as a result.</p>
+          <h4>Creating a function</h4>
+          <p>In Python a function is defined using the <i>def</i> keyword</p>
+          <pre><code>
+            def my_function:
+                 print("Hello!")
+          </code></pre>
+          <h4>Calling a function</h4>
+          <p>To call a function, use the function name followed by paranthesis</p>
+          <pre><code>
+            my_function()
+          </code></p>
+          </section>
+          <section id="exception_handling" class="main-section">
+            <header>Exception Handling</header>
+            <p>Exception handling in Python allows you to manage and respond to unexpected events that occur during program execution.</p>
+            <p>Key concepts in exception handling include:</p>
+            <ul>
+                <li><strong>try:</strong> block where you attempt the operation that may raise an exception.</li>
+                <li><strong>except:</strong> block to handle specific exceptions raised within the try block.</li>
+                <li><strong>finally:</strong> block that executes regardless of whether an exception occurred or not, often used for cleanup actions.</li>
+            </ul>
+
+            <p>Example:</p>
+            <pre><code>
+              try:
+                  numerator = 10
+                  denominator = 0
+                  result = numerator/denominator
+                  print(result)
+              except:
+                  print("Error: Denominator cannot be 0.")
+    
+               finally:
+                  print("This is finally block.")
+            </pre></code>
+          </section>
+    </main>
+    
+  </body>
+</html>
